@@ -1,0 +1,20 @@
+{
+    "name": "evileyecc/khl-sdk",
+    "type": "library",
+    "authors": [
+        {
+            "name": "ChenJiaying",
+            "email": "admin@eve-info.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "KaiHeiLaSDK\\": "src/"
+        }
+    },
+    "description": "ababab",
+    "require": {
+        "guzzlehttp/guzzle": "~6.0",
+        "monolog/monolog": "^2.2"
+    }
+}

@@ -1,0 +1,6 @@
+index.php
+test.png
+composer.lock
+/vendor/
+/logs/
+.idea/
