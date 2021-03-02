@@ -14,7 +14,7 @@
     },
     "description": "a sdk for KaiHeila api",
     "require": {
-        "guzzlehttp/guzzle": "~6.0",
+        "guzzlehttp/guzzle": "^7.0",
         "monolog/monolog": "^2.2"
     }
 }
