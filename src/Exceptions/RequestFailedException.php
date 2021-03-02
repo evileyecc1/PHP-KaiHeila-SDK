@@ -26,12 +26,16 @@ class RequestFailedException extends \Exception
     public function __construct(\Exception $exception,ResponseInterface $response)
     {
         $this->response = $response;
+        if($this->getResponse()->getStatusCode() == 403){
+            parent::__construct('Forbidden', $this->getResponse()->getStatusCode(), $exception->getPrevious());
+        }
         parent::__construct($this->getError(), $this->getResponse()->getStatusCode(), $exception->getPrevious());
     }
 
     public function getError()
     {
-        return json_decode($this->response->getBody()->getContents()->message);
+        $body = json_decode($this->response->getBody()->getContents());
+        return property_exists($body,'message') ? $body->message : 'Unknown error';
     }
 
     public function getResponse()
