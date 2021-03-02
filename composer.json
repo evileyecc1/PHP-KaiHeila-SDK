@@ -1,5 +1,5 @@
 {
-    "name": "evileyecc/khl-sdk",
+    "name": "evileyecc1/PHP-KaiHeila-SDK",
     "type": "library",
     "authors": [
         {
@@ -12,7 +12,7 @@
             "KaiHeiLaSDK\\": "src/"
         }
     },
-    "description": "ababab",
+    "description": "a sdk for KaiHeila api",
     "require": {
         "guzzlehttp/guzzle": "~6.0",
         "monolog/monolog": "^2.2"
