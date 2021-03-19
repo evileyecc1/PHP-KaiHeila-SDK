@@ -20,7 +20,7 @@ echo '最新的一条消息发送者：' . $messages->items[0]->author->username
 
 ## 文档
 
-正在编写中
+正在编写中.
 
 ## 开发计划
 
